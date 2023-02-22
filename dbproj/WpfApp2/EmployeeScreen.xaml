@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.EmployeeScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="EmployeeScreen" Height="450" Width="800">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" Margin="0,5">
+            <Button x:Name="viewPmBtn" HorizontalAlignment="Left" VerticalAlignment="Top"  Click="viewPmBtn_Click" Content="View Products" Height="30" Margin="5,5"  Width="150"/>
+            <Button x:Name="viewOrdersBtn"  HorizontalAlignment="Left" VerticalAlignment="Top"  Click="viewOrdersBtn_Click" Content="View Orders"  Height="30" Margin="5,5"  Width="150"/>
+            <Button x:Name="PmBtn" Click="PmBtn_Click" Content="Product Management" HorizontalAlignment="Left" Height="30" Margin="5,5" VerticalAlignment="Top" Width="150" RenderTransformOrigin="1.085,0.696"/>
+            <Button x:Name="ordersBtn" Click="ordersBtn_Click" Content="Order Management" HorizontalAlignment="Left" Height="30" Margin="5,5" VerticalAlignment="Top" Width="150" RenderTransformOrigin="1.085,0.696"/>
+            <Button x:Name="customersBtn" Click="customersBtn_Click" Content="Customer Management" HorizontalAlignment="Left" Height="30" Margin="5,5" VerticalAlignment="Top" Width="150" />
+            <Button x:Name="viewcus" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="viewcus_Click" Content="View customer" Height="30"  Margin="5,5" Width="150"/>
+            <Button x:Name="viewodret" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="viewodret_Click" Content=" Orders Returned" Height="30" Margin="5,5" Width="150"/>
+            <Button x:Name="viewexpanse" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="viewexpense_Click" Content=" Expense Management" Height="30" Width="181"/>
+
+        </WrapPanel>
+    </Grid>
+</Window>

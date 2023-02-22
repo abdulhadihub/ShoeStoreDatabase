@@ -1,0 +1,19 @@
+﻿<Page x:Class="WpfApp2.custrep"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="custrep">
+
+    <Grid>
+        <Label Content="Customer Id:" HorizontalAlignment="Left" Margin="18,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="29" Width="102" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="custid" HorizontalAlignment="Left" Margin="147,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" Height="29" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="View Customer Reports:" HorizontalAlignment="Left" Margin="18,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="29" Width="262" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Button x:Name="ViewrepS"  Content="Single Customer Report" HorizontalAlignment="Left" Height="30" Margin="217,153,0,0" VerticalAlignment="Top" Width="150" Click="ViewrepS_Click" />
+        <Button x:Name="ViewrepA"  Content="All Reports" HorizontalAlignment="Left" Height="30" Margin="372,153,0,0" VerticalAlignment="Top" Width="150" Click="ViewrepA_Click" />
+        <DataGrid x:Name="datagridcusrep" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="43,188,115,29" />
+    </Grid>
+</Page>

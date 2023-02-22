@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.viewreports"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="viewreports" Height="450" Width="800">
+    <Grid Margin="-2,0,2,0">
+
+        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button x:Name="customersBtn" Click="customersBtn_Click" Content="Customer Report"  MinWidth="100" Margin="10,0,0,0" Width="105" />
+            <Button x:Name="employeesBtn" Click="employeesBtn_Click" Content="Employee Report" MinWidth="100" Margin="10,0,0,0" Width="105"  />
+            <Button x:Name="salesrep" Click="salesrep_Click" Content="Sales Report"  MinWidth="100" Margin="10,0,0,0" Width="105"  />
+            <Button x:Name="exprep"   Click="exprep_Click" Content=" Expense Report" MinWidth="100" Margin="10,0,0,0" Width="105" />
+            <Button x:Name="profrep" Content="Profit Report" MinWidth="100" Margin="10,0,0,0" Width="105" Click="profrep_Click"/>
+            <Button x:Name="revrep"  Click="revrep_Click" Content="Revenue Report"  MinWidth="100" Margin="10,0,0,0" Width="105" />
+            <Button x:Name="priceHistory"  Click="priceHistory_Click" Content="View Price History"  MinWidth="100" Margin="10,0,0,0" Width="105" />
+
+        </StackPanel>
+        <Frame x:Name="Main" Margin="0,35,0,0"/>
+    </Grid>
+</Window>

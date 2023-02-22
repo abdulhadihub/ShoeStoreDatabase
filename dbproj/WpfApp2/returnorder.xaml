@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.returnorder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="returnorder" Height="450" Width="800">
+    <Grid>
+
+        <Label Content="Returned Order" HorizontalAlignment="Left" Margin="298,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="58" Width="189" FontFamily="Microsoft New Tai Lue" FontSize="25"/>
+        <Label Content="Order Information:" HorizontalAlignment="Left" Margin="43,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="32" Width="175" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Color ID:" HorizontalAlignment="Left" Margin="43,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="29" Width="123" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Returned Date:" HorizontalAlignment="Left" Margin="43,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="30" Width="115" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Product ID:" HorizontalAlignment="Left" Margin="426,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="32" Width="105" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Order Id:" HorizontalAlignment="Left" Margin="43,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="29" Width="86" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="colid" HorizontalAlignment="Left" Margin="170,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" Height="30" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Size ID:" HorizontalAlignment="Left" Margin="444,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="30" Width="86" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="Returned Quantity:" HorizontalAlignment="Left" Margin="400,262,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="30" Width="146" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Button x:Name="btnadd" Content="ADD" HorizontalAlignment="Left" Margin="50,366,0,0" VerticalAlignment="Top" Width="108" Click="btnadd_Click" Height="31"/>
+        <Button x:Name="btnupdate" Content="UPDATE" HorizontalAlignment="Left" Margin="194,366,0,0" VerticalAlignment="Top" Click="btnupdate_Click" Height="31" Width="114" RenderTransformOrigin="0.672,0.698"/>
+
+        <Button x:Name="load" Content="LOAD" HorizontalAlignment="Left" Margin="363,366,0,0" VerticalAlignment="Top" Height="31" Click="load_Click" Width="124"/>
+        <Button x:Name="clear" Content="CLEAR" HorizontalAlignment="Left" Margin="560,366,0,0" VerticalAlignment="Top" Width="108" Click="clear_Click" Height="31"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="175,262,0,0" VerticalAlignment="Top" Width="212" Height="30"/>
+        <TextBox x:Name="odid" HorizontalAlignment="Left" Margin="170,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" Height="30" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="proid" HorizontalAlignment="Left" Margin="546,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" Height="30" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="sizeid" HorizontalAlignment="Left" Margin="546,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" Height="30" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="retqty" HorizontalAlignment="Left" Margin="551,262,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" Height="30" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+
+    </Grid>
+</Window>

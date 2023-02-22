@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.datagrigempMan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="datagrigempMan" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="118,168,117,47" />
+        <Button x:Name="search" Content="SEARCH" HorizontalAlignment="Left" Margin="437,86,0,0" VerticalAlignment="Top" Height="35" Click="Search_Click" Width="119" RenderTransformOrigin="0.328,0.115"/>
+        <Label Content="Employee Id:" HorizontalAlignment="Left" Margin="118,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="33" Width="108" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="empid2" HorizontalAlignment="Left" Margin="245,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="28" FontFamily="Microsoft New Tai Lue" FontSize="15" Width="135"/>
+        <Button x:Name="load" Content="Show all" HorizontalAlignment="Left" Margin="564,86,0,0" VerticalAlignment="Top" Height="35" Click="load_Click" Width="119" RenderTransformOrigin="0.328,0.115"/>
+
+    </Grid>
+</Window>

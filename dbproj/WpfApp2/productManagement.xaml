@@ -1,0 +1,105 @@
+﻿<Window x:Class="WpfApp2.productManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="productManagement" Height="550" Width="900">
+    <Grid Grid.Row="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label FontSize="30" HorizontalAlignment="Center">Product management</Label>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*"></ColumnDefinition>
+                    <ColumnDefinition Width="70*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="1" Height="30" Width="auto" FontSize="15" Foreground="Maroon" HorizontalAlignment="Left" FontStyle="Italic" FontWeight="Bold" VerticalAlignment="Top">Manage Products</Label>
+                <Label Grid.Row="1" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Product ID</Label>
+                <Label  Grid.Row="2" Grid.Column="0" Height="30" Width="auto"  FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Product Name</Label>
+                <Label Grid.Row="3" Grid.Column="0"    Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Color</Label>
+                <Label  Grid.Row="4" Grid.Column="0" Height="30" Width="auto"  FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Size</Label>
+
+                <Label Grid.Row="5" Grid.Column="0"  Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Supplier ID</Label>
+                <Label Grid.Row="6" Grid.Column="0" Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Category ID</Label>
+                <Label Grid.Row="7" Grid.Column="0"  Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top" Content="Unit Buy Price"/>
+                <Label  Grid.Row="8" Grid.Column="0" Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Units In Stock</Label>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="pidTB"    Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="pnameTB"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                <TextBox Grid.Row="7" Grid.Column="1" x:Name="unitPriceTB"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                <TextBox Grid.Row="8" Grid.Column="1" x:Name="unitStockTB"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                <Button Grid.Row="1" Grid.Column="1" Content="View Products" x:Name="viewPmBtn" Click="viewPmBtn_Click"  Height="30" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,0,0,0" RenderTransformOrigin="0.498,0.009"/>
+                <ComboBox x:Name="colorCB"  Grid.Row="3" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+                <ComboBox x:Name="sizeCB" Grid.Row="4" Grid.Column="1"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+                <ComboBox x:Name="supplierCB"  Grid.Row="5" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+                <ComboBox x:Name="categoryCB" Grid.Row="6" Grid.Column="1"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+                <WrapPanel Grid.Row="9" HorizontalAlignment="Center" >
+                    <Button Content="Clear" x:Name="clearBtn" Click="clearBtn_Click"  Height="30" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top"></Button>
+                </WrapPanel>
+                <WrapPanel Grid.Row="9" Grid.Column="1" >
+                    <Button Content="Add" x:Name="addBtn" Click="addBtn_Click"  Margin="5,0,5,0" Height="30" Width="80" HorizontalAlignment="center" VerticalAlignment="Top"></Button>
+                    <Button Content="Update" x:Name="updateBtn" Click="updateBtn_Click" Margin="5,0,5,0"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+                </WrapPanel>
+                <Label x:Name="label" Grid.Column="1" Content="Unit Sale Price" Margin="80,0,125,15" Grid.Row="7" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" FontWeight="Bold" FontSize="13" RenderTransformOrigin="-0.018,0.52"/>
+                <TextBox x:Name="salePrice" Grid.Column="1" Margin="185,1,10,16" Grid.Row="7" TextWrapping="Wrap" Width="120" d:LayoutOverrides="VerticalAlignment"/>
+            </Grid>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*"></ColumnDefinition>
+                        <ColumnDefinition Width="70*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="catidTB"    Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="catnameTB"   Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+                    
+                    <Label Grid.Row="0" Grid.Column="1" Height="30" Width="auto" FontSize="15" Foreground="Maroon" HorizontalAlignment="Left" FontStyle="Italic" FontWeight="Bold" VerticalAlignment="Top">Manage Categories</Label>
+                    <Label Grid.Row="1" Grid.Column="0"    Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Category ID</Label>
+                    <Label  Grid.Row="2" Grid.Column="0" Height="30" Width="auto"  FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Category Name</Label>
+                    <Button Grid.Row="1" Grid.Column="1" Content="Search" x:Name="CatsearchBtn" Click="CatsearchBtn_Click"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,0,0,0" RenderTransformOrigin="0.498,0.009"></Button>
+
+                    <WrapPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" >
+                        <Button Content="Clear" x:Name="CatclearBtn" Click="CatclearBtn_Click"  Height="30" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top"></Button>
+                    </WrapPanel>
+                    <WrapPanel Grid.Row="4" Grid.Column="1" >
+                        <Button Content="Add" x:Name="CataddBtn" Click="CataddBtn_Click"  Margin="5,0,5,0" Height="30" Width="80" HorizontalAlignment="center" VerticalAlignment="Top"></Button>
+                        <Button Content="Update" x:Name="CatupdateBtn" Click="CatupdateBtn_Click"  Height="30" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </WrapPanel>
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</Window>

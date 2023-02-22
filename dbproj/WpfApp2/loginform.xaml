@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.loginform"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="loginform" Height="450" Width="800">
+    <Grid>
+        <Label Content="USERNAME:" HorizontalAlignment="Left" Margin="54,157,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="32" Width="100" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="181,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="217" Height="32" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Label Content="PASSWORD:" HorizontalAlignment="Left" Margin="53,211,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="30" Width="101" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <Button x:Name="LOGIN" Content="LOGIN" HorizontalAlignment="Left" Margin="314,269,0,0" VerticalAlignment="Top" Width="108" Click="login_Click" Height="47"/>
+        <Label Content="LOGIN PAGE" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="58" Width="172" FontFamily="Microsoft New Tai Lue" FontSize="25"/>
+        <Label Content="Login Credentials:" HorizontalAlignment="Left" Margin="43,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.656" Height="32" Width="175" FontFamily="Microsoft New Tai Lue" FontSize="15"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="181,211,0,0" VerticalAlignment="Top" Width="216" Height="30"/>
+
+    </Grid>
+</Window>

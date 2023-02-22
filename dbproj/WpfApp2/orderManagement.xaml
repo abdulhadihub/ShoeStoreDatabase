@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp2.orderManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="orderManagement" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Height="30" Width="auto" FontSize="15" Foreground="Maroon" HorizontalAlignment="Center" FontStyle="Italic" FontWeight="Bold" VerticalAlignment="Top">Manage Orders</Label>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="70*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Order ID</Label>
+            <Label Grid.Row="1" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Product ID</Label>
+            <Label Grid.Row="2" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Color</Label>
+            <Label Grid.Row="3" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Size</Label>
+            <Label Grid.Row="4" Grid.Column="0"    Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Quantity</Label>
+            <WrapPanel Grid.Row="4" Grid.Column="1" Width="auto" HorizontalAlignment="Left">
+                <TextBox Grid.Row="4" Grid.Column="1" x:Name="qtyTB"    Height="30" Width="80" HorizontalAlignment="center" VerticalAlignment="Top"></TextBox>
+                </WrapPanel>
+            <Label  Grid.Row="5" Grid.Column="0" Height="30" Width="auto"  FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Customer ID</Label>
+            <Label Grid.Row="6" Grid.Column="0"  Height="30" Width="auto" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Employee ID</Label>
+            <Label Grid.Row="7" Grid.Column="0"  Height="30" Width="80" FontSize="13" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Top">Order Date</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="oidTB"    Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+            <Button Grid.Row="0" Grid.Column="1" Content="Search" x:Name="searchBtn" Click="searchBtn_Click"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,0,0,0" RenderTransformOrigin="0.498,0.009"></Button>
+            <Button Grid.Row="0" Grid.Column="1" Content="View Orders" x:Name="viewOrdersBtn" Click="viewOrdersBtn_Click"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,0,0,0" RenderTransformOrigin="0.498,0.009"/>
+            <ComboBox x:Name="productsCB"  Grid.Row="1" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+            <ComboBox x:Name="colorCB"  Grid.Row="2" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+            <ComboBox x:Name="sizeCB" Grid.Row="3" Grid.Column="1"   Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+            <ComboBox x:Name="customerCB"  Grid.Row="5" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+            <ComboBox x:Name="employeeCB"  Grid.Row="6" Grid.Column="1"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="odateTB"   Height="30" Width="130" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+            <WrapPanel Grid.Row="8" HorizontalAlignment="Center" >
+                <Button Content="Clear" x:Name="clearBtn" Click="clearBtn_Click"  Height="30" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top"></Button>
+            </WrapPanel>
+            <WrapPanel Grid.Row="8" Grid.Column="1" >
+                <Button Content="Add Product" x:Name="addProductBtn" Click="addProductBtn_Click"  Margin="5,0,5,0" Height="30" Width="80" HorizontalAlignment="center" VerticalAlignment="Top"></Button>
+                <Button Content="Add Order" x:Name="addBtn" Click="addBtn_Click"  Margin="5,0,5,0" Height="30" Width="80" HorizontalAlignment="center" VerticalAlignment="Top"></Button>
+                <Button Content="Update" x:Name="updateBtn" Click="updateBtn_Click" Margin="5,0,5,0"  Height="30" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+            </WrapPanel>
+        </Grid>
+
+    </Grid>
+</Window>
